@@ -11,12 +11,11 @@ import {
   Cloud,
   Code2,
   Cpu,
-  Database,
   Download,
   ExternalLink,
-  Github,
+  GitGraph,
   Layers,
-  Linkedin,
+  Globe,
   Mail,
   MessageCircle,
   Server,
@@ -198,7 +197,7 @@ export default function Home() {
               {[
                 { icon: Code2, title: "VSCode", sub: "Realtime coding" },
                 { icon: Server, title: "Terminal", sub: "Linux + Docker" },
-                { icon: Github, title: "GitHub Graph", sub: "CI/CD pipelines" },
+                { icon: GitGraph, title: "GitHub Graph", sub: "CI/CD pipelines" },
                 { icon: Bot, title: "AI Nodes", sub: "Agent architecture" },
               ].map((item) => (
                 <motion.div
@@ -354,7 +353,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section id="github" title="GitHub" icon={Github}>
+      <Section id="github" title="GitHub" icon={GitGraph}>
         <div className="grid gap-6 lg:grid-cols-[1.4fr_1fr]">
           <Card>
             <CardContent>
@@ -399,8 +398,8 @@ export default function Home() {
               <p className="mt-3 text-zinc-400">Open to AI product collaborations, consulting, and high-impact engineering roles.</p>
               <div className="mt-6 space-y-3 text-sm text-zinc-300">
                 <p className="flex items-center gap-2"><Mail className="h-4 w-4 text-[#4f8cff]" />hello@portfolio.dev</p>
-                <p className="flex items-center gap-2"><Linkedin className="h-4 w-4 text-[#4f8cff]" />linkedin.com/in/ai-engineer</p>
-                <p className="flex items-center gap-2"><Github className="h-4 w-4 text-[#4f8cff]" />github.com/ai-engineer</p>
+                <p className="flex items-center gap-2"><Globe className="h-4 w-4 text-[#4f8cff]" />linkedin.com/in/ai-engineer</p>
+                <p className="flex items-center gap-2"><GitGraph className="h-4 w-4 text-[#4f8cff]" />github.com/ai-engineer</p>
                 <p className="flex items-center gap-2"><MessageCircle className="h-4 w-4 text-[#4f8cff]" />@telegram_handle</p>
               </div>
               <Button variant="outline" className="mt-6">
@@ -424,7 +423,7 @@ export default function Home() {
             <span>The future belongs to builders.</span>
           </div>
           <div className="flex items-center gap-2">
-            {[Github, Linkedin, ExternalLink, Cloud, ArrowUpRight].map((Icon, idx) => (
+            {[GitGraph, Globe, ExternalLink, Cloud, ArrowUpRight].map((Icon, idx) => (
               <motion.a
                 key={idx}
                 whileHover={{ y: -3 }}
