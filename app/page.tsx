@@ -39,10 +39,10 @@ const reveal: Variants = {
 };
 
 const stats = [
-  { label: "Years Learning", value: "6+" },
-  { label: "Projects Completed", value: "42" },
-  { label: "GitHub Commits", value: "2.5K+" },
-  { label: "Technologies", value: "30+" },
+  { label: "Tahun Belajar", value: "3+" },
+  { label: "Proyek Selesai", value: "15+" },
+  { label: "GitHub Commits", value: "500+" },
+  { label: "Teknologi", value: "20+" },
 ];
 
 const timeline = [
@@ -76,61 +76,55 @@ const stackGroups = [
 const projects = [
   {
     category: "AI",
-    title: "Agentic Support Platform",
-    status: "Production",
-    desc: "Multi-agent support workspace with memory, retrieval and automated action pipelines.",
-    features: ["Intent orchestration", "Autonomous workflow", "Realtime analytics"],
+    title: "Platform Dukungan Agentic",
+    status: "Produksi",
+    desc: "Workspace dukungan multi-agen dengan memori, retrieval, dan pipeline aksi otomatis.",
+    features: ["Orkestrasi intent", "Workflow otonom", "Analitik realtime"],
     tech: ["Next.js", "FastAPI", "LangChain", "Redis"],
   },
   {
     category: "Automation",
-    title: "Ops Automation Engine",
+    title: "Engine Automasi Ops",
     status: "Scaling",
-    desc: "Event-driven automation system for deployment, observability and incident response.",
-    features: ["CI/CD intelligence", "Policy checks", "Self-healing jobs"],
+    desc: "Sistem automasi berbasis event untuk deployment, observability, dan respons insiden.",
+    features: ["Intelijensi CI/CD", "Pemeriksaan kebijakan", "Job self-healing"],
     tech: ["Node.js", "Docker", "GitHub Actions", "PostgreSQL"],
   },
   {
     category: "Web",
-    title: "Premium Commerce Core",
+    title: "Core Commerce Premium",
     status: "Live",
-    desc: "High-performance full-stack platform with search, recommendations and secure checkout.",
-    features: ["Headless architecture", "Smart recommendations", "Audit-ready infra"],
+    desc: "Platform full-stack berkinerja tinggi dengan pencarian, rekomendasi, dan checkout aman.",
+    features: ["Arsitektur headless", "Rekomendasi pintar", "Infrastruktur audit-ready"],
     tech: ["React", "TypeScript", "Redis", "Nginx"],
   },
 ];
 
 const experiences = [
   {
-    role: "Senior Full Stack Engineer",
-    place: "FutureStack Labs",
-    period: "2024 — Present",
-    summary: "Leads AI-powered product delivery across platform, backend and automation systems.",
+    role: "Freelance Developer",
+    place: "Berbagai Proyek",
+    period: "2023 — Sekarang",
+    summary: "Mengerjakan proyek web development dan automation untuk berbagai klien.",
   },
   {
-    role: "AI Engineer",
-    place: "Neural Systems Co.",
-    period: "2022 — 2024",
-    summary: "Built production LLM pipelines, retrieval systems and intelligent internal tools.",
-  },
-  {
-    role: "Software Engineer",
-    place: "Velocity Digital",
-    period: "2020 — 2022",
-    summary: "Shipped scalable web products and designed modern developer workflows.",
+    role: "Junior Developer",
+    place: "Startup Lokal",
+    period: "2022 — 2023",
+    summary: "Membangun aplikasi web dan mempelajari teknologi modern dalam tim kecil.",
   },
 ];
 
 const certificates = [
-  "Machine Learning Engineering",
-  "Cloud Infrastructure Specialist",
-  "Advanced System Design",
+  "Sertifikat Web Development",
+  "Sertifikat Cloud Computing",
+  "Sertifikat System Design",
 ];
 
 const blog = [
-  { title: "Designing Reliable AI Agents", category: "AI", time: "8 min read" },
-  { title: "Neo-Brutal Product Interfaces", category: "Design", time: "6 min read" },
-  { title: "CI/CD for High-Velocity Teams", category: "Engineering", time: "10 min read" },
+  { title: "Merancang AI Agent yang Handal", category: "AI", time: "8 menit baca" },
+  { title: "Interface Produk Neo-Brutal", category: "Design", time: "6 menit baca" },
+  { title: "CI/CD untuk Tim Berkecepatan Tinggi", category: "Engineering", time: "10 menit baca" },
 ];
 
 function Section({ id, title, icon: Icon, children }: { id: string; title: string; icon: React.ElementType; children: React.ReactNode }) {
@@ -173,17 +167,17 @@ export default function Home() {
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <Badge className="mb-6 border-[#365ea8] bg-[#4f8cff]/12 text-[#95b7ff]">AI Engineer • Full Stack Developer</Badge>
             <h1 className="text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">
-              Building Intelligent Products for the Future.
+              Halo, Saya Rangga Figo Hidayat
             </h1>
             <p className="mt-6 max-w-xl text-lg text-zinc-400">
-              I build AI Agents, Full Stack Applications, Automation Systems, and Scalable Web Platforms.
+              Mahasiswa Universitas Semarang yang tertarik dengan AI, Web Development, dan Automation.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild>
-                <a href="#projects">View Projects</a>
+                <a href="#projects">Lihat Proyek</a>
               </Button>
               <Button variant="outline" asChild>
-                <a href="#contact">Contact Me</a>
+                <a href="#contact">Hubungi Saya</a>
               </Button>
             </div>
           </motion.div>
@@ -195,10 +189,10 @@ export default function Home() {
           >
             <div className="grid gap-4 md:grid-cols-2">
               {[
-                { icon: Code2, title: "VSCode", sub: "Realtime coding" },
+                { icon: Code2, title: "VSCode", sub: "Coding realtime" },
                 { icon: Server, title: "Terminal", sub: "Linux + Docker" },
-                { icon: GitGraph, title: "GitHub Graph", sub: "CI/CD pipelines" },
-                { icon: Bot, title: "AI Nodes", sub: "Agent architecture" },
+                { icon: GitGraph, title: "GitHub Graph", sub: "Pipeline CI/CD" },
+                { icon: Bot, title: "AI Nodes", sub: "Arsitektur agen" },
               ].map((item) => (
                 <motion.div
                   key={item.title}
@@ -214,13 +208,13 @@ export default function Home() {
             <div className="mt-4 rounded-2xl border border-[#2a2a2a] bg-[#0e0e0e] p-4 font-mono text-xs text-zinc-400">
               <p>{"> docker compose up -d"}</p>
               <p className="mt-1">{"> npx agents run --mode production"}</p>
-              <p className="mt-1 text-[#4f8cff]">✓ Systems operational</p>
+              <p className="mt-1 text-[#4f8cff]">✓ Sistem operasional</p>
             </div>
           </motion.div>
         </div>
       </section>
 
-      <Section id="about" title="About" icon={Sparkles}>
+      <Section id="about" title="Tentang" icon={Sparkles}>
         <div className="grid gap-6 lg:grid-cols-[320px_1fr]">
           <Card className="overflow-hidden rounded-[24px]">
             <CardContent className="h-full bg-gradient-to-b from-[#1b1b1b] to-[#0f0f0f] p-0">
@@ -274,7 +268,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section id="projects" title="Projects" icon={Layers}>
+      <Section id="projects" title="Proyek" icon={Layers}>
         <div className="grid gap-6">
           {projects.map((project) => (
             <motion.div key={project.title} whileHover={{ y: -6 }}>
@@ -305,8 +299,8 @@ export default function Home() {
                     </div>
                     <div className="flex flex-wrap gap-2">
                       <Button variant="outline" size="sm">GitHub</Button>
-                      <Button variant="outline" size="sm">Live Demo</Button>
-                      <Button size="sm">Case Study</Button>
+                      <Button variant="outline" size="sm">Demo Live</Button>
+                      <Button size="sm">Studi Kasus</Button>
                     </div>
                   </div>
                 </CardContent>
@@ -316,7 +310,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section id="experience" title="Experience" icon={ChartNoAxesCombined}>
+      <Section id="experience" title="Pengalaman" icon={ChartNoAxesCombined}>
         <div className="relative ml-3 border-l-2 border-[#2a2a2a] pl-8">
           {experiences.map((item) => (
             <motion.div key={item.role} variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }} className="relative mb-6">
