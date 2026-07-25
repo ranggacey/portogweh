@@ -5,19 +5,19 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-2xl border-2 border-[#2a2a2a] text-sm font-semibold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#4f8cff] disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap border-[3px] border-[#333] text-sm font-bold uppercase tracking-wider transition-all focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
         default:
-          "bg-[#4f8cff] text-white shadow-[0_8px_24px_rgba(79,140,255,0.35)] hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(79,140,255,0.45)]",
+          "bg-[#e0e0e0] text-black shadow-[5px_5px_0px_#000] hover:-translate-x-[3px] hover:-translate-y-[3px] hover:shadow-[8px_8px_0px_#000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0px_#000]",
         outline:
-          "bg-[#111111] text-white hover:-translate-y-1 hover:bg-[#161616] hover:shadow-[0_12px_28px_rgba(0,0,0,0.4)]",
+          "bg-black text-[#e0e0e0] hover:-translate-x-[2px] hover:-translate-y-[2px] hover:shadow-[5px_5px_0px_#000]",
       },
       size: {
         default: "h-11 px-6 py-2",
-        sm: "h-9 rounded-xl px-4",
-        lg: "h-12 rounded-2xl px-8",
+        sm: "h-9 px-4 text-[10px]",
+        lg: "h-12 px-8",
       },
     },
     defaultVariants: {

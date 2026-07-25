@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AI Engineer Portfolio",
-  description: "Premium dark neo-brutalist portfolio for an AI Engineer and Full Stack Developer.",
+  title: "Rangga Figo — NeoBrutalist Noir",
+  description: "Dark neo-brutalist portfolio — Rangga Figo Hidayat",
 };
 
 export default function RootLayout({
@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="id" suppressHydrationWarning>
       <body>{children}</body>
     </html>
   );
