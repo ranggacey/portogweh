@@ -167,7 +167,7 @@ export default function Home() {
       <section className="section-shell relative mx-auto flex min-h-screen w-full max-w-6xl flex-col justify-center px-4 py-22 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-            <div className="brutal-tag mb-6 inline-flex">AI Engineer &bull; Full Stack</div>
+            <div className="brutal-tag mb-6 inline-flex">Web Developer</div>
             <h1 className="text-5xl font-black leading-tight tracking-tighter uppercase md:text-7xl">
               Rangga
               <br />
