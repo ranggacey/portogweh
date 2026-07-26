@@ -72,10 +72,10 @@ const stackGroups = [
 const projects = [
   {
     category: "Web",
-    title: "Presensi Brida",
+    title: "Presensi Magang",
     status: "Live",
-    desc: "Aplikasi absensi berbasis web dengan fitur multi-user, manajemen data presensi realtime, dan laporan otomatis. Dibangun dengan Next.js dan Tailwind CSS.",
-    features: ["Multi-user role", "Laporan otomatis", "Realtime database"],
+    desc: "Aplikasi absensi magang berbasis web untuk memantau kehadiran, jam kerja, dan aktivitas peserta magang secara realtime.",
+    features: ["Absensi realtime", "Laporan magang", "Multi-role access"],
     tech: ["Next.js", "JavaScript", "Tailwind", "Vercel"],
   },
   {
