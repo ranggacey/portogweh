@@ -36,91 +36,115 @@ const reveal: Variants = {
 
 const stats = [
   { label: "Tahun Belajar", value: "3+" },
-  { label: "Proyek Selesai", value: "15+" },
-  { label: "GitHub Commits", value: "500+" },
-  { label: "Teknologi", value: "20+" },
+  { label: "Proyek Selesai", value: "8+" },
+  { label: "GitHub Commits", value: "200+" },
+  { label: "Teknologi", value: "15+" },
 ];
 
 const roles = [
-  "Software Engineer",
-  "AI Engineer",
+  "Web Developer",
+  "AI Enthusiast",
   "Backend",
   "Frontend",
-  "DevOps",
-  "Automation",
+  "PHP Developer",
+  "Mahasiswa",
 ];
 
 const stackGroups = [
   {
-    title: "AI",
-    items: ["Python", "FastAPI", "LangChain", "OpenAI", "MCP"],
+    title: "Frontend",
+    items: ["Next.js", "React", "Tailwind", "TypeScript", "Vite"],
   },
   {
-    title: "Full Stack",
-    items: ["Next.js", "React", "Tailwind", "TypeScript", "Node.js"],
+    title: "Backend",
+    items: ["PHP", "Python", "FastAPI", "Node.js", "Supabase"],
+  },
+  {
+    title: "AI & ML",
+    items: ["Python", "Fuzzy Logic", "CNN", "Jupyter", "Pandas"],
   },
   {
     title: "Infra",
     items: ["Docker", "Linux", "GitHub Actions", "VPS", "Nginx"],
   },
-  {
-    title: "Database",
-    items: ["MongoDB", "PostgreSQL", "Redis"],
-  },
 ];
 
 const projects = [
   {
-    category: "AI",
-    title: "Platform Dukungan Agentic",
-    status: "Produksi",
-    desc: "Workspace dukungan multi-agen dengan memori, retrieval, dan pipeline aksi otomatis.",
-    features: ["Orkestrasi intent", "Workflow otonom", "Analitik realtime"],
-    tech: ["Next.js", "FastAPI", "LangChain", "Redis"],
-  },
-  {
-    category: "Automation",
-    title: "Engine Automasi Ops",
-    status: "Scaling",
-    desc: "Sistem automasi berbasis event untuk deployment, observability, dan respons insiden.",
-    features: ["Intelijensi CI/CD", "Pemeriksaan kebijakan", "Job self-healing"],
-    tech: ["Node.js", "Docker", "GitHub Actions", "PostgreSQL"],
+    category: "Web",
+    title: "Presensi Brida",
+    status: "Live",
+    desc: "Aplikasi absensi berbasis web dengan fitur multi-user, manajemen data presensi realtime, dan laporan otomatis. Dibangun dengan Next.js dan Tailwind CSS.",
+    features: ["Multi-user role", "Laporan otomatis", "Realtime database"],
+    tech: ["Next.js", "JavaScript", "Tailwind", "Vercel"],
   },
   {
     category: "Web",
-    title: "Core Commerce Premium",
-    status: "Live",
-    desc: "Platform full-stack berkinerja tinggi dengan pencarian, rekomendasi, dan checkout aman.",
-    features: ["Arsitektur headless", "Rekomendasi pintar", "Infrastruktur audit-ready"],
-    tech: ["React", "TypeScript", "Redis", "Nginx"],
+    title: "Love Prompt Battle (Oekod)",
+    status: "Side Project",
+    desc: "Web interaktif untuk pasangan dengan pertanyaan acak, dua versi jawaban (cewe/cowo), dan penyimpanan hasil ke Supabase. UI neobrutalism.",
+    features: ["Acak pertanyaan", "Dua versi jawaban", "Supabase storage"],
+    tech: ["React", "Vite", "TypeScript", "Supabase"],
+  },
+  {
+    category: "AI",
+    title: "Fuzzy Logic System",
+    status: "Kuliah",
+    desc: "Implementasi lengkap sistem fuzzy logic: Mamdani, Sugeno, dan Tsukamoto untuk pengambilan keputusan berbasis aturan fuzzy.",
+    features: ["Mamdani FIS", "Sugeno FIS", "Tsukamoto FIS", "ANFIS"],
+    tech: ["Python", "Jupyter", "NumPy", "Scikit-learn"],
+  },
+  {
+    category: "AI",
+    title: "Face Recognition CNN",
+    status: "Kuliah",
+    desc: "Face recognition menggunakan Convolutional Neural Network. Bagian dari praktikum kecerdasan buatan dengan dataset wajah.",
+    features: ["CNN architecture", "Image processing", "Classification"],
+    tech: ["Python", "TensorFlow", "OpenCV", "Jupyter"],
+  },
+  {
+    category: "ML",
+    title: "ML API Deployment",
+    status: "Deployed",
+    desc: "API prediksi berbasis linear regression untuk dataset healthcare. Model dilatih dan dideploy dengan Flask.",
+    features: ["REST API", "Model prediction", "Healthcare dataset"],
+    tech: ["Python", "Flask", "Scikit-learn", "Pandas"],
+  },
+  {
+    category: "Web",
+    title: "Chef AI",
+    status: "Side Project",
+    desc: "Aplikasi asisten resep masakan berbasis AI yang membantu pengguna menemukan resep berdasarkan bahan yang tersedia.",
+    features: ["Resep otomatis", "Filter bahan", "Interaktif UI"],
+    tech: ["React", "TypeScript", "AI API", "Tailwind"],
   },
 ];
 
 const experiences = [
   {
-    role: "Freelance Developer",
-    place: "Berbagai Proyek",
-    period: "2023 — Sekarang",
-    summary: "Mengerjakan proyek web development dan automation untuk berbagai klien.",
+    role: "Mahasiswa Teknik Informatika",
+    place: "Universitas Semarang",
+    period: "2022 — 2025",
+    summary: "Mempelajari pengembangan web, kecerdasan buatan, dan pemrograman. Aktif mengerjakan proyek praktikum dan tugas akhir.",
   },
   {
-    role: "Junior Developer",
-    place: "Startup Lokal",
-    period: "2022 — 2023",
-    summary: "Membangun aplikasi web dan mempelajari teknologi modern dalam tim kecil.",
+    role: "Web Developer (Freelance)",
+    place: "Berbagai Proyek",
+    period: "2024 — Sekarang",
+    summary: "Mengerjakan proyek pengembangan aplikasi web, sistem absensi, dan prototyping aplikasi berbasis Next.js dan PHP.",
   },
 ];
 
 const certificates = [
-  "Web Development",
+  "Web Development (Dicoding)",
+  "Machine Learning",
   "Cloud Computing",
-  "System Design",
 ];
 
 const blog = [
-  { title: "Merancang AI Agent yang Handal", category: "AI", time: "8 min" },
-  { title: "Interface Neo-Brutal", category: "Design", time: "6 min" },
-  { title: "CI/CD Tim Berkecepatan Tinggi", category: "Engineering", time: "10 min" },
+  { title: "Cara Kerja Fuzzy Logic", category: "AI", time: "5 min" },
+  { title: "Deploy ML Model gratis", category: "Engineering", time: "7 min" },
+  { title: "Tips React untuk Pemula", category: "Web", time: "6 min" },
 ];
 
 function Section({ id, title, icon: Icon, children }: { id: string; title: string; icon: React.ElementType; children: React.ReactNode }) {
@@ -167,7 +191,7 @@ export default function Home() {
       <section className="section-shell relative mx-auto flex min-h-screen w-full max-w-6xl flex-col justify-center px-4 py-22 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-            <div className="brutal-tag mb-6 inline-flex">Web Developer</div>
+            <div className="brutal-tag mb-6 inline-flex">Web Developer — AI Enthusiast</div>
             <h1 className="text-5xl font-black leading-tight tracking-tighter uppercase md:text-7xl">
               Rangga
               <br />
@@ -175,7 +199,7 @@ export default function Home() {
             </h1>
             <div className="brutal-line w-32 my-6"></div>
             <p className="max-w-xl text-base text-[#888] uppercase tracking-widest text-sm">
-              Mahasiswa Universitas Semarang — AI, Web, Automation.
+              Mahasiswa Teknik Informatika — Universitas Semarang
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#projects" className="brutal-button inline-flex items-center gap-2 bg-[#e0e0e0] text-black px-6 py-3 text-sm no-underline">
@@ -204,10 +228,10 @@ export default function Home() {
             <div className="p-5 space-y-4">
               <div className="grid gap-3 md:grid-cols-2">
                 {[
-                  { icon: Code2, title: "VSCode", sub: "Coding realtime" },
+                  { icon: Code2, title: "VSCode", sub: "Coding daily" },
                   { icon: Terminal, title: "zsh", sub: "Linux + Docker" },
-                  { icon: GitGraph, title: "git log", sub: "500+ commits" },
-                  { icon: Zap, title: "AI Agent", sub: "Arsitektur otonom" },
+                  { icon: GitGraph, title: "git log", sub: "200+ commits" },
+                  { icon: Brain, title: "AI Lab", sub: "Fuzzy + CNN" },
                 ].map((item) => (
                   <div key={item.title} className="brutal-card-white p-4">
                     <item.icon className="mb-2 h-4 w-4 text-[#e0e0e0]" />
@@ -218,9 +242,9 @@ export default function Home() {
               </div>
               {/* Terminal output */}
               <div className="border-[3px] border-[#222] p-4 font-mono text-xs text-[#666] bg-black">
-                <p><span className="text-[#888]">$</span> docker compose up -d</p>
-                <p className="mt-1"><span className="text-[#888]">$</span> npx agents run --mode prod</p>
-                <p className="mt-1 text-[#e0e0e0]">✓ Sistem operasional</p>
+                <p><span className="text-[#888]">$</span> npm run dev</p>
+                <p className="mt-1"><span className="text-[#888]">$</span> python3 fuzzy_mamdani.py</p>
+                <p className="mt-1 text-[#e0e0e0]">✓ Sistem siap</p>
               </div>
             </div>
           </motion.div>
@@ -317,9 +341,7 @@ export default function Home() {
                       ))}
                     </div>
                     <div className="flex flex-wrap gap-2">
-                      <a href="#" className="brutal-button bg-[#111] text-[#e0e0e0] px-4 py-2 text-[10px] no-underline">GitHub</a>
-                      <a href="#" className="brutal-button bg-[#111] text-[#e0e0e0] px-4 py-2 text-[10px] no-underline">Demo</a>
-                      <a href="#" className="brutal-button bg-[#e0e0e0] text-black px-4 py-2 text-[10px] no-underline">Studi Kasus</a>
+                      <a href={`https://github.com/ranggacey/${project.title.toLowerCase().replace(/\s+/g, '-')}`} className="brutal-button bg-[#111] text-[#e0e0e0] px-4 py-2 text-[10px] no-underline">GitHub</a>
                     </div>
                   </div>
                 </div>
@@ -387,7 +409,7 @@ export default function Home() {
             </div>
           </div>
           <div className="grid gap-3">
-            {["Repositories: 78", "Commit Activity: High", "Top Language: TypeScript", "Streak: 148 days"].map((item) => (
+            {["Repositories: 20+", "Commit Activity: Medium", "Top Language: JavaScript", "Focus: Web & AI"].map((item) => (
               <div key={item} className="brutal-card p-4">
                 <p className="text-xs text-[#888] uppercase tracking-wider">{item}</p>
               </div>
@@ -421,12 +443,11 @@ export default function Home() {
         <div className="grid gap-6 lg:grid-cols-[1fr_1.1fr]">
           <div className="brutal-card p-6">
             <h3 className="text-3xl font-black uppercase tracking-tight">Let's Build Something.</h3>
-            <p className="mt-3 text-sm text-[#666]">Open to kolaborasi AI, consulting, dan high-impact engineering.</p>
+            <p className="mt-3 text-sm text-[#666]">Mahasiswa TI yang tertarik di web development, AI, dan backend.</p>
             <div className="mt-6 space-y-3 text-xs text-[#888]">
-              <p className="flex items-center gap-2"><Mail className="h-3 w-3 text-[#e0e0e0]" /> hello@portogweh.com</p>
+              <p className="flex items-center gap-2"><Mail className="h-3 w-3 text-[#e0e0e0]" /> ranggafigo@email.com</p>
               <p className="flex items-center gap-2"><Globe className="h-3 w-3 text-[#e0e0e0]" /> linkedin.com/in/ranggacey</p>
               <p className="flex items-center gap-2"><GitGraph className="h-3 w-3 text-[#e0e0e0]" /> github.com/ranggacey</p>
-              <p className="flex items-center gap-2"><MessageCircle className="h-3 w-3 text-[#e0e0e0]" /> @ranggacey</p>
             </div>
             <button className="brutal-button mt-6 bg-black text-[#e0e0e0] px-5 py-3 text-xs inline-flex items-center gap-2 uppercase">
               <Download className="h-3 w-3" /> Resume
@@ -456,7 +477,7 @@ export default function Home() {
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-8 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
           <div className="flex items-center gap-2 text-xs text-[#555] uppercase tracking-widest">
             <Brain className="h-3 w-3 text-[#888]" />
-            <span>The future belongs to builders.</span>
+            <span>Build something everyday.</span>
           </div>
           <div className="flex items-center gap-2">
             {[GitGraph, Globe, ExternalLink, Cloud, ArrowUpRight].map((Icon, idx) => (
