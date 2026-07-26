@@ -72,6 +72,14 @@ const stackGroups = [
 const projects = [
   {
     category: "Web",
+    title: "QRkuy Generator",
+    status: "Live",
+    desc: "QR code generator lucu imut dengan berbagai pilihan warna, bentuk dot (rounded/circle/square), bisa tambah love di tengah, riwayat tersimpan otomatis. UI aesthetic gemoy banget.",
+    features: ["Custom warna & bentuk", "Download PNG", "Riwayat otomatis", "Cute UI"],
+    tech: ["SvelteKit", "TypeScript", "Tailwind", "QR Code"],
+  },
+  {
+    category: "Web",
     title: "Presensi Magang",
     status: "Live",
     desc: "Aplikasi absensi magang berbasis web untuk memantau kehadiran, jam kerja, dan aktivitas peserta magang secara realtime.",
