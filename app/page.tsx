@@ -74,57 +74,133 @@ const projects = [
     category: "Web",
     title: "QRkuy Generator",
     status: "Live",
+    slug: "qr-generator",
     desc: "QR code generator lucu imut dengan berbagai pilihan warna, bentuk dot (rounded/circle/square), bisa tambah love di tengah, riwayat tersimpan otomatis. UI aesthetic gemoy banget.",
-    features: ["Custom warna & bentuk", "Download PNG", "Riwayat otomatis", "Cute UI"],
+    features: ["Custom warna & bentuk", "Download PNG", "Riwayat otomatis", "SvelteKit"],
     tech: ["SvelteKit", "TypeScript", "Tailwind", "QR Code"],
+    liveUrl: "https://qr-generator.vercel.app",
+    screenshot: "/screenshots/qr-generator.png",
   },
   {
     category: "Web",
     title: "Presensi Magang",
     status: "Live",
+    slug: "presensi-bridaa",
     desc: "Aplikasi absensi magang berbasis web untuk memantau kehadiran, jam kerja, dan aktivitas peserta magang secara realtime.",
     features: ["Absensi realtime", "Laporan magang", "Multi-role access"],
     tech: ["Next.js", "JavaScript", "Tailwind", "Vercel"],
+    liveUrl: null,
+    screenshot: null,
   },
   {
     category: "Web",
+    title: "Puzzlefoto (Vision Puzzle)",
+    status: "Live",
+    slug: "puzzlefoto",
+    desc: "AI-powered hand tracking puzzle game. Ambil foto, solve puzzle pake gesture tangan. Computer vision + AI background removal.",
+    features: ["AI Photo Booth", "Hand gesture control", "AI background removal", "Dynamic puzzle"],
+    tech: ["Next.js", "React", "TypeScript", "MediaPipe", "TensorFlow.js"],
+    liveUrl: "https://puzzlefoto.my.id",
+    screenshot: "/screenshots/puzzlefoto.png",
+  },
+  {
+    category: "Web",
+    title: "PalettePilot",
+    status: "Live",
+    slug: "palettepilot",
+    desc: "Color palette generator dengan harmony modes (monochromatic, analogous, complementary, triadic). Export CSS/Tailwind, WCAG checker, color blind simulator.",
+    features: ["Harmony analysis", "AI suggestions", "WCAG checker", "Export CSS/Tailwind"],
+    tech: ["React", "TypeScript", "Tailwind v4", "Framer Motion"],
+    liveUrl: "https://palettepilot.vercel.app",
+    screenshot: "/screenshots/palettepilot.png",
+  },
+  {
+    category: "Game",
+    title: "Yuna's Quest",
+    status: "Live",
+    slug: "yunas-quest",
+    desc: "2D Pixel RPG with procedural art, D-Pad controls, turn-based combat, NPC interaction. Single-file HTML prototype.",
+    features: ["Procedural pixel art", "D-Pad mobile", "Turn-based combat", "NPC dialog"],
+    tech: ["HTML5 Canvas", "JavaScript", "Procedural Art"],
+    liveUrl: "https://yunas-quest.vercel.app",
+    screenshot: "/screenshots/yunas-quest.png",
+  },
+  {
+    category: "Game",
+    title: "World of Hernia",
+    status: "Live",
+    slug: "world-of-hernia",
+    desc: "2D Pixel RPG — Next.js + MongoDB. Pixel art assets dari OpenGameArt. Turn-based combat, quest system, level-up.",
+    features: ["MongoDB Atlas", "Pixel art OGA", "Quest system", "Level-up"],
+    tech: ["Next.js", "MongoDB", "TypeScript", "Tailwind"],
+    liveUrl: "https://world-of-hernia.vercel.app",
+    screenshot: "/screenshots/world-of-hernia.png",
+  },
+  {
+    category: "Game",
+    title: "2DHTML RPG",
+    status: "Live",
+    slug: "2dhtml",
+    desc: "World of Hernia — HTML prototype dengan pixel art asli. Map interaktif, D-Pad, combat, 5 NPC, 4 enemy types. Single file HTML/CSS/JS.",
+    features: ["Pixel art sprites", "5 NPCs", "4 enemy types", "Combat system"],
+    tech: ["HTML5 Canvas", "CSS", "JavaScript"],
+    liveUrl: null,
+    screenshot: "/screenshots/2dhtml.png",
+  },
+  {
+    category: "AI",
     title: "Love Prompt Battle (Oekod)",
     status: "Side Project",
+    slug: "oekod",
     desc: "Web interaktif untuk pasangan dengan pertanyaan acak, dua versi jawaban (cewe/cowo), dan penyimpanan hasil ke Supabase. UI neobrutalism.",
     features: ["Acak pertanyaan", "Dua versi jawaban", "Supabase storage"],
     tech: ["React", "Vite", "TypeScript", "Supabase"],
+    liveUrl: null,
+    screenshot: null,
   },
   {
     category: "AI",
     title: "Fuzzy Logic System",
     status: "Kuliah",
+    slug: "fuzzy-logic",
     desc: "Implementasi lengkap sistem fuzzy logic: Mamdani, Sugeno, dan Tsukamoto untuk pengambilan keputusan berbasis aturan fuzzy.",
     features: ["Mamdani FIS", "Sugeno FIS", "Tsukamoto FIS", "ANFIS"],
     tech: ["Python", "Jupyter", "NumPy", "Scikit-learn"],
+    liveUrl: null,
+    screenshot: null,
   },
   {
     category: "AI",
     title: "Face Recognition CNN",
     status: "Kuliah",
+    slug: "face-recognition-cnn",
     desc: "Face recognition menggunakan Convolutional Neural Network. Bagian dari praktikum kecerdasan buatan dengan dataset wajah.",
     features: ["CNN architecture", "Image processing", "Classification"],
     tech: ["Python", "TensorFlow", "OpenCV", "Jupyter"],
+    liveUrl: null,
+    screenshot: null,
   },
   {
     category: "ML",
     title: "ML API Deployment",
     status: "Deployed",
+    slug: "ml-api-deployment",
     desc: "API prediksi berbasis linear regression untuk dataset healthcare. Model dilatih dan dideploy dengan Flask.",
     features: ["REST API", "Model prediction", "Healthcare dataset"],
     tech: ["Python", "Flask", "Scikit-learn", "Pandas"],
+    liveUrl: null,
+    screenshot: null,
   },
   {
     category: "Web",
     title: "Chef AI",
     status: "Side Project",
+    slug: "chef-ai",
     desc: "Aplikasi asisten resep masakan berbasis AI yang membantu pengguna menemukan resep berdasarkan bahan yang tersedia.",
     features: ["Resep otomatis", "Filter bahan", "Interaktif UI"],
     tech: ["React", "TypeScript", "AI API", "Tailwind"],
+    liveUrl: null,
+    screenshot: null,
   },
 ];
 
@@ -340,8 +416,12 @@ export default function Home() {
                   </div>
                   {/* Side panel */}
                   <div className="border-t-[3px] lg:border-t-0 lg:border-l-[3px] border-[#222] bg-black p-6">
-                    <div className="mb-5 h-32 border-[3px] border-[#222] bg-[#0a0a0a] flex items-center justify-center">
-                      <span className="text-[#333] text-xs uppercase tracking-widest">Preview</span>
+                    <div className="mb-5 h-32 border-[3px] border-[#222] bg-[#0a0a0a] overflow-hidden flex items-center justify-center">
+                      {project.screenshot ? (
+                        <img src={project.screenshot} alt={project.title} className="w-full h-full object-cover" />
+                      ) : (
+                        <span className="text-[#333] text-xs uppercase tracking-widest">Preview</span>
+                      )}
                     </div>
                     <div className="flex flex-wrap gap-2 mb-5">
                       {project.tech.map((tech) => (
@@ -349,7 +429,10 @@ export default function Home() {
                       ))}
                     </div>
                     <div className="flex flex-wrap gap-2">
-                      <a href={`https://github.com/ranggacey/${project.title.toLowerCase().replace(/\s+/g, '-')}`} className="brutal-button bg-[#111] text-[#e0e0e0] px-4 py-2 text-[10px] no-underline">GitHub</a>
+                      <a href={`https://github.com/ranggacey/${project.slug}`} target="_blank" rel="noopener" className="brutal-button bg-[#111] text-[#e0e0e0] px-4 py-2 text-[10px] no-underline">GitHub</a>
+                      {project.liveUrl && (
+                        <a href={project.liveUrl} target="_blank" rel="noopener" className="brutal-button bg-[#1a3a2a] text-[#7f7] px-4 py-2 text-[10px] no-underline">Live Demo</a>
+                      )}
                     </div>
                   </div>
                 </div>
