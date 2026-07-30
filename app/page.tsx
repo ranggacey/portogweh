@@ -202,6 +202,17 @@ const projects = [
     liveUrl: null,
     screenshot: null,
   },
+  {
+    category: "CLI Tool",
+    title: "GlitchGarden",
+    status: "Live",
+    slug: "glitch-garden",
+    desc: "Procedural pixel art garden generator CLI. Generate unique garden designs dari seed, export PNG. 4 palettes, 9 tile types (trees, flowers, paths, water, stones, mushrooms).",
+    features: ["Seed-based generation", "4 palettes (neon, sunset, ice, retro)", "9 tile types", "Interactive mode", "PNG export"],
+    tech: ["Python", "Pillow", "CLI"],
+    liveUrl: "https://github.com/ranggacey/glitch-garden",
+    screenshot: null,
+  },
 ];
 
 const experiences = [
